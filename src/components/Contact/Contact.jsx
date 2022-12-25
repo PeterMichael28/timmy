@@ -10,8 +10,8 @@ const Contact = () => {
   const mobile = window.innerWidth <= 768 ? true : false;
   return (
     <div className="contact" id="contact">
-          <img src={ banner } alt="" />
-          <img src={mobile? shinemobile : shine} alt="" />
+          <img className='banner' src={ banner } alt="" />
+          <img className='shine' src={mobile? shinemobile : shine} alt="" />
           <span>Have a project in mind?</span>
           <span>Let's work together</span>
           <div className='contact-btn'>

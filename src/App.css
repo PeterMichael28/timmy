@@ -8,6 +8,9 @@ body {
     background-color: #fffefe;
     overflow-x: hidden;;
 }
+::-webkit-scrollbar{
+  display: none;
+}
 
 
 .btn-container {
@@ -22,6 +25,7 @@ body {
     border-radius: 2px;
 
 }
+
 
 .btn-container>span {
     background: #FFFFFF;

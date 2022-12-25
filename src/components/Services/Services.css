@@ -52,8 +52,8 @@
     
     .services-container>div{
         flex-direction: column;
-        padding: 1rem;
-        gap: 2rem;
+        padding: 1.5rem;
+        gap: 2.5rem;
     }
     .services-container>div>img {
         width:2.5rem;
@@ -61,7 +61,7 @@
     }
     
     .services-container>div>span{
-        font-size: .84rem;
+        font-size: .9rem;
     }
     
 

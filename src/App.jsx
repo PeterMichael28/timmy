@@ -1,5 +1,6 @@
 import { useState } from 'react'
 import img from './assets/bannerimage.png'
+import img2 from './assets/mobilebanner-img.png'
 import './App.css'
 import About from './components/About/About';
 import Headers from './components/Headers/Headers';
@@ -25,9 +26,9 @@ function App() {
       <About />
       <Skills />
       <Services />
-     {!mobile && <div className='image-banner'>
-        <img src={img} alt="" />
-      </div>}
+     <div className='image-banner'>
+        <img src={mobile ? img2 : img} alt="" />
+      </div>
       <Selected />
       <Testimonials />
       <Contact />
