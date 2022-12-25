@@ -1,0 +1,88 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #fffefe;
+    overflow-x: hidden;;
+}
+
+
+.btn-container {
+    position: relative;
+    display: flex;
+    align-items: center;
+    margin-top: 2rem;
+    border: 2px solid #16063E;
+    width: fit-content;
+    padding: 1rem 1.5rem;
+    justify-content: center;
+    border-radius: 2px;
+
+}
+
+.btn-container>span {
+    background: #FFFFFF;
+    border: 1.5px solid #16063E;
+    width: 6px;
+    height: 6px;
+    position: absolute;
+    z-index: 8;
+}
+
+.btn-container>span:nth-of-type(1) {
+    top: -5px;
+    left: -5px;
+
+}
+.btn-container>span:nth-of-type(2) {
+    bottom: -5px;
+    left: -5px;
+
+}
+.btn-container>span:nth-of-type(3) {
+    top: -5px;
+    right: -5px;
+
+}
+
+.btn-container>span:nth-of-type(4) {
+    bottom: -5px;
+    right: -5px;
+
+}
+
+.btn-container>button {
+   border: none;
+   outline: none;
+    background: none;
+    font-size: 1.2rem;
+    font-weight: bold;
+    font-family: Ambit1,inherit auto;
+}
+
+.title {
+    font-size: 3rem;
+    font-weight: bold;
+    font-family: Ambit5,inherit auto;
+    color: #16063e;
+}
+
+
+/*image banner*/
+.image-banner {
+    margin-top: 5rem;
+    margin-bottom: 5rem;
+}
+.image-banner>img{
+    height: 5rem;
+    width: 100%;
+}
+
+@media screen and (max-width:768px) {
+    .title{
+        font-size: 2.3rem;
+    }
+}

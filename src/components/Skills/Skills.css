@@ -1,0 +1,104 @@
+.skills {
+    position: relative;
+    display: flex;
+    /* gap: 5rem; */
+    margin: 6rem 4rem 2rem;
+    margin-bottom: 4rem;
+    justify-content: space-between;
+    align-items: center;
+    padding-left: 4rem;
+    
+
+}
+
+.skills-banner{
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    margin: auto;
+    z-index: -1;
+    width: 100%;
+    height: 26rem;
+}
+
+.skills-img{
+    position: relative;
+    margin-right: 2rem;
+}
+.skills-img>:nth-child(1) {
+    width: 37rem;
+    height: 24rem;
+}
+
+.skills-img>:nth-child(2) {
+    position: absolute;
+    top: 2.1rem;
+    left: 13rem;
+    width: 6rem;
+    height: 2.6rem;
+    transform: rotate(350deg);
+
+}
+
+.skills-text>img {
+    position: absolute;
+    top: -.8rem;
+    left: -3rem;
+    width: 9rem;
+
+
+}
+.skills-text {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    margin-top: 4rem;
+    margin-left: 1.3rem;
+}
+
+.skills-text>span {
+font-weight: 600;
+font-size: 57px;
+line-height: 110%;
+letter-spacing: 1px;
+color: #FFFFFF;
+font-family: Ambit1,inherit auto;
+text-shadow: 1.2px -1.2px 1px #11052F, 1.7px -1.7px 1px #fff ;
+}
+
+@media screen and (max-width: 768px) {
+    
+    .skills {
+        margin: 6rem 0rem 2rem;
+        margin-bottom: 4rem;
+        padding-left: 0rem;
+        height: 24rem;
+        
+    
+    }
+
+    .skills-text {
+        position: absolute;
+        display: flex;
+        flex-direction: column;
+         top: 0rem;
+        margin-left: 1.3rem;
+    }
+    
+    .skills-text>span {
+    font-weight: 600;
+    font-size: 2rem;
+    line-height: 110%;
+    letter-spacing: 1px;
+    color: #FFFFFF;
+    font-family: Ambit1,inherit auto;
+    text-shadow: 1.2px -1.2px 1px #11052F, 1.7px -1.7px 1px #fff ;
+    }
+    
+    
+    .skills-banner{
+
+        height: 100%;
+    }
+}
