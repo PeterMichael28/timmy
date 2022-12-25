@@ -1,4 +1,4 @@
-import React from 'react'
+import React, {useState, useEffect}  from 'react'
 import './Contact.css'
 import Button from '../Button'
 import banner from '../../assets/contactBanner.png'
@@ -7,7 +7,13 @@ import shinemobile from '../../assets/mobilestar.png'
 
 const Contact = () => {
 
-  const mobile = window.innerWidth <= 768 ? true : false;
+  const [mobile, setMobile] = useState('')
+
+  useEffect( () => {
+    window.innerWidth <= 768 ? setMobile(true) : setMobile(false);
+  }, [ window.innerWidth ] )
+  
+
   return (
     <div className="contact" id="contact">
           <img className='banner' src={ banner } alt="" />

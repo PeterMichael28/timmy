@@ -1,4 +1,4 @@
-import React from 'react'
+import React, {useState, useEffect}  from 'react'
 import './Skills.css'
 import banner from '../../assets/banner-bg.png'
 import bannerImg from '../../assets/banner-images.png'
@@ -10,8 +10,11 @@ import small from '../../assets/bg2.png'
 
 
 const Skill = () => {
+  const [mobile, setMobile] = useState('')
 
-  const mobile = window.innerWidth <= 768 ? true : false;
+  useEffect( () => {
+    window.innerWidth <= 768 ? setMobile(true) : setMobile(false);
+  }, [window.innerWidth])
   return (
     <div id="skills" className="skills">
       <img className='skills-banner' src={ mobile ? small : banner } alt="img" />

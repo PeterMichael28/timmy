@@ -1,4 +1,4 @@
-import React from 'react'
+import React, {useState, useEffect} from 'react'
 import './Testimonials.css'
 import pp from '../../assets/pp.png'
 import pp2 from '../../assets/pp2.png'
@@ -6,8 +6,11 @@ import leftArrow from '../../assets/leftArrow.png'
 import rightArrow from '../../assets/rightArrow.png'
 
 const Testimonials = () => {
+    const [mobile, setMobile] = useState('')
 
-    const mobile = window.innerWidth <= 768 ? true : false;
+    useEffect( () => {
+      window.innerWidth <= 768 ? setMobile(true) : setMobile(false);
+    }, [window.innerWidth])
   return (
       <div id="testimonials" className="testimonials">
           <div className='tes-header'>

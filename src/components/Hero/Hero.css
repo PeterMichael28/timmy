@@ -154,12 +154,13 @@ z-index: -3;
 
     .hero {
  
-        padding: 2rem .6rem 7rem;
+        padding: 2rem .6rem 9rem;
         height: auto;
         /* border: 1px solid black; */
         overflow: hidden;
         z-index: -1;
         top: 0;
+        gap: 3rem
     
     }
 
@@ -167,6 +168,7 @@ z-index: -3;
 
 .hero-texts {
     margin-top: 5rem;
+    gap: 2rem;
 }
 
 .hero-texts>:nth-child(1)>span {

@@ -10,10 +10,10 @@ const Footer = () => {
       <div id="footer" className="footer">
           <span>&copy; TIMMY AKAPO 2021</span>
           <ul>
-            <li><Link  span={true} smooth={true} to='hero'>Home</Link></li>
-            <li><Link  span={true} smooth={true} to='about'>About</Link></li>
-            <li><Link  span={true} smooth={true} to='selected'>Projects</Link></li>
-            <li><Link  span={true} smooth={true} to='contact'>Contact me</Link></li>
+            <li><Link  span='true' smooth={true} to='hero'>Home</Link></li>
+            <li><Link  span='true' smooth={true} to='about'>About</Link></li>
+            <li><Link  span='true' smooth={true} to='selected'>Projects</Link></li>
+            <li><Link  span='true' smooth={true} to='contact'>Contact me</Link></li>
           </ul>
           <div>
               <img src={img1} alt="" />

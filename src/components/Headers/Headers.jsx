@@ -1,12 +1,15 @@
-import React, { useState } from 'react'
+import React, { useState, useEffect } from 'react'
 import './Header.css'
 import Logo from '../../assets/Logo.png'
 import { Link } from 'react-scroll';
 
 const Headers = () => {
 
+  const [mobile, setMobile] = useState('')
 
-  const mobile = window.innerWidth <= 768 ? true : false;
+  useEffect( () => {
+    window.innerWidth <= 768 ? setMobile(true) : setMobile(false);
+  }, [window.innerWidth])
 
   const mobileh = window.innerHeight > 5 ? true : false;
   const [open, setOpen] = useState(false)
@@ -35,10 +38,10 @@ const Headers = () => {
         </div> }
       
         <ul className={`${!open && 'mobile'}`}>
-          <li className="active"><Link onClick={ () => setOpen( false ) } span={true} smooth={true} to='hero'>Home</Link> </li>
-            <li><Link onClick={() => setOpen(false)} span={true} smooth={true} to='about'>About</Link></li>
-            <li><Link onClick={() => setOpen(false)} span={true} smooth={true} to='selected'>Projects</Link></li>
-            <li><Link onClick={() => setOpen(false)} span={true} smooth={true} to='contact'>Contact me</Link></li>
+          <li className="active"><Link onClick={ () => setOpen( false ) } span='true' smooth={true} to='hero'>Home</Link> </li>
+            <li><Link onClick={() => setOpen(false)} span='true' to='about'>About</Link></li>
+            <li><Link onClick={() => setOpen(false)} span='true' to='selected'>Projects</Link></li>
+            <li><Link onClick={() => setOpen(false)} span='true' to='contact'>Contact me</Link></li>
           </ul>
     </div>
   )

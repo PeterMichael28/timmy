@@ -1,4 +1,4 @@
-import React from 'react'
+import React, {useState, useEffect}  from 'react'
 import './About.css'
 import Button from '../Button'
 import image1 from '../../assets/about-dt.png'
@@ -6,7 +6,11 @@ import image2 from '../../assets/about-mobile.png'
 
 const About = () => {
 
-    const mobile = window.innerWidth <=768 ? true : false
+    const [mobile, setMobile] = useState('')
+
+    useEffect( () => {
+      window.innerWidth <= 768 ? setMobile(true) : setMobile(false);
+    }, [window.innerWidth])
 
 
   return (

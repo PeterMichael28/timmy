@@ -1,4 +1,4 @@
-import React from 'react'
+import React, { useState, useEffect } from 'react'
 import './Hero.css'
 import Image from '../../assets/hero-sp.png'
 import Image1 from '../../assets/bigstar.png'
@@ -10,7 +10,15 @@ import Button from '../Button';
 
 const Hero = () => {
 
-  const mobile = window.innerWidth <= 768 ? true : false;
+  const [mobile, setMobile] = useState('')
+
+  useEffect( () => {
+    window.innerWidth <= 768 ? setMobile(true) : setMobile(false);
+  }, [window.innerWidth])
+
+  
+
+
   return (
     <div id='hero' className='hero'>
       <img className='hero-bg' src={mobile? Image5 :Image4} alt="" />
