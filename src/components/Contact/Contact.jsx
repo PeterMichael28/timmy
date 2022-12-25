@@ -3,7 +3,7 @@ import './Contact.css'
 import Button from '../Button'
 import banner from '../../assets/contactBanner.png'
 import shine from '../../assets/shine.png'
-import shinemobile from '../../assets/mobilestar.png'
+import shinemobile from '../../assets/shine2.png'
 
 const Contact = () => {
 
