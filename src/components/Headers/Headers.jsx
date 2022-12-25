@@ -1,6 +1,7 @@
 import React, { useState } from 'react'
 import './Header.css'
 import Logo from '../../assets/Logo.png'
+import { Link } from 'react-scroll';
 
 const Headers = () => {
 
@@ -34,10 +35,10 @@ const Headers = () => {
         </div> }
       
         <ul className={`${!open && 'mobile'}`}>
-          <li className="active" onClick={ () => setOpen( false ) }>Home</li>
-            <li onClick={() => setOpen(false)}>About</li>
-            <li onClick={() => setOpen(false)}>Projects</li>
-            <li onClick={() => setOpen(false)}>Contact me</li>
+          <li className="active"><Link onClick={ () => setOpen( false ) } span={true} smooth={true} to='hero'>Home</Link> </li>
+            <li><Link onClick={() => setOpen(false)} span={true} smooth={true} to='about'>About</Link></li>
+            <li><Link onClick={() => setOpen(false)} span={true} smooth={true} to='selected'>Projects</Link></li>
+            <li><Link onClick={() => setOpen(false)} span={true} smooth={true} to='contact'>Contact me</Link></li>
           </ul>
     </div>
   )
